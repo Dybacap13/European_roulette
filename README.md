@@ -1,3 +1,5 @@
 # European_roulette
-European roulette
-# Euro
+Игра в европейскую рулетку. 
+
+
+
