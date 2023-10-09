@@ -1,5 +1,7 @@
 <launch>
 <rosparam command="load" file="$(find European_roulette)/config/european_roulette.yaml" />
+<node pkg="European_roulette" type="subscribe" name="subscribe" output="screen" >
     <param name="signal_client_service" type="string" value="/bid_in_European_roulette" />
     <param name="topic_reading_answer" type="string" value="/anser_to_topic" />
+    </node>
 </launch>
