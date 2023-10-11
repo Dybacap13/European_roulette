@@ -9,6 +9,9 @@ int main(int argc, char **argv) {
     European_roulette::RequestRoulette you_request;
     std::cout << "Enter any integer from 0 to 2000 ";
     std::cin >> you_request.number;
+    if (you_request.number < 0 or you_request.number > 2000) {
+      std::cout << "You entered a number that is not within the required range. Chance to win 0% ";
+    }
     std::cout << "Enter any color ";
     std::cin >> you_request.color;
     srv.request.bid = you_request;
